@@ -14,3 +14,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.contenedor .banda:nth-child(1){
+    background-color: #666;
+}
+.contenedor .banda:nth-child(2){
+    background-color: #888;
+}
+.contenedor .banda:nth-child(3){
+    background-color: #aaa;
+}
+.contenedor .banda:nth-child(4){
+    background-color: #ccc;
+}
+.contenedor .banda:nth-child(5){
+    background-color: #eee;
+}
