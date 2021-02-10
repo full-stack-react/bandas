@@ -14,7 +14,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .contenedor .banda:nth-child(1){
     background-color: #666;
 }
@@ -29,4 +28,10 @@ body {
 }
 .contenedor .banda:nth-child(5){
     background-color: #eee;
+}
+.contenedor .banda span {
+  transition: transform 0.2s;
+}
+.contenedor .banda:hover span {
+  transform: rotate(900deg);
 }
