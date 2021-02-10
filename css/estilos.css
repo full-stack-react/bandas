@@ -1,3 +1,10 @@
+:root {
+  --gris1: #666;
+  --gris2: #888;
+  --gris3: #aaa;
+  --gris4: #ccc;
+  --gris5: #eee;
+}
 * {
   box-sizing: border-box;
 }
@@ -14,20 +21,53 @@ body {
   justify-content: center;
   align-items: center;
 }
-.contenedor .banda:nth-child(1){
-    background-color: #666;
+.contenedor .banda:nth-child(1) {
+  background-color: var(--gris1);
 }
-.contenedor .banda:nth-child(2){
-    background-color: #888;
+.contenedor .banda:nth-child(2) {
+  background-color: var(--gris2);
 }
-.contenedor .banda:nth-child(3){
-    background-color: #aaa;
+.contenedor .banda:nth-child(3) {
+  background-color: var(--gris3);
 }
-.contenedor .banda:nth-child(4){
-    background-color: #ccc;
+.contenedor .banda:nth-child(4) {
+  background-color: var(--gris4);
 }
-.contenedor .banda:nth-child(5){
-    background-color: #eee;
+.contenedor .banda:nth-child(5) {
+  background-color: var(--gris5);
+}
+.contenedor .banda:nth-child(1):hover {
+  background-color: var(--gris5);
+}
+.contenedor .banda:nth-child(1):hover + .banda {
+  background-color: var(--gris1);
+}
+.contenedor .banda:nth-child(1):hover + .banda + .banda {
+  background-color: var(--gris2);
+}
+.contenedor .banda:nth-child(1):hover + .banda + .banda + .banda {
+  background-color: var(--gris3);
+}
+.contenedor .banda:nth-child(1):hover + .banda + .banda + .banda + .banda {
+  background-color: var(--gris4);
+}
+.contenedor .banda:nth-child(2):hover,
+.contenedor .banda:nth-child(3):hover,
+.contenedor .banda:nth-child(4):hover,
+.contenedor .banda:nth-child(5):hover {
+  background-color: var(--gris5);
+}
+.contenedor .banda:nth-child(2):hover + .banda,
+.contenedor .banda:nth-child(3):hover + .banda,
+.contenedor .banda:nth-child(4):hover + .banda {
+  background-color: var(--gris1);
+}
+.contenedor .banda:nth-child(2):hover + .banda + .banda,
+.contenedor .banda:nth-child(3):hover + .banda + .banda {
+  background-color: var(--gris2);
+}
+.contenedor .banda:nth-child(2):hover + .banda + .banda + .banda {
+  background-color: var(--gris3);
 }
 .contenedor .banda span {
   transition: transform 0.2s;
