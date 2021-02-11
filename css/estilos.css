@@ -36,38 +36,30 @@ body {
 .contenedor .banda:nth-child(5) {
   background-color: var(--gris5);
 }
-.contenedor .banda:nth-child(1):hover {
-  background-color: var(--gris5);
-}
-.contenedor .banda:nth-child(1):hover + .banda {
-  background-color: var(--gris1);
-}
-.contenedor .banda:nth-child(1):hover + .banda + .banda {
-  background-color: var(--gris2);
-}
-.contenedor .banda:nth-child(1):hover + .banda + .banda + .banda {
-  background-color: var(--gris3);
-}
-.contenedor .banda:nth-child(1):hover + .banda + .banda + .banda + .banda {
-  background-color: var(--gris4);
-}
+.contenedor .banda:nth-child(1):hover,
 .contenedor .banda:nth-child(2):hover,
 .contenedor .banda:nth-child(3):hover,
 .contenedor .banda:nth-child(4):hover,
 .contenedor .banda:nth-child(5):hover {
   background-color: var(--gris5);
 }
+.contenedor .banda:nth-child(1):hover + .banda,
 .contenedor .banda:nth-child(2):hover + .banda,
 .contenedor .banda:nth-child(3):hover + .banda,
 .contenedor .banda:nth-child(4):hover + .banda {
   background-color: var(--gris1);
 }
+.contenedor .banda:nth-child(1):hover + .banda + .banda,
 .contenedor .banda:nth-child(2):hover + .banda + .banda,
 .contenedor .banda:nth-child(3):hover + .banda + .banda {
   background-color: var(--gris2);
 }
+.contenedor .banda:nth-child(1):hover + .banda + .banda + .banda,
 .contenedor .banda:nth-child(2):hover + .banda + .banda + .banda {
   background-color: var(--gris3);
+}
+.contenedor .banda:nth-child(1):hover + .banda + .banda + .banda + .banda {
+  background-color: var(--gris4);
 }
 .contenedor .banda span {
   transition: transform 0.2s;
