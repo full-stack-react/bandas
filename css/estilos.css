@@ -1,9 +1,9 @@
 :root {
-  --gris1: #666;
-  --gris2: #888;
-  --gris3: #aaa;
-  --gris4: #ccc;
-  --gris5: #eee;
+  --gris1: #f00;
+  --gris2: #f22;
+  --gris3: #f44;
+  --gris4: #f66;
+  --gris5: #f88;
 }
 * {
   box-sizing: border-box;
